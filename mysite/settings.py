@@ -102,3 +102,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+ROOT_PATH = os.path.dirname(__file__)
+STATICFILES_DIRS = [
+    ('common', os.path.join(ROOT_PATH, 'static-common'))
+]
